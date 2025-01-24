@@ -1,0 +1,58 @@
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem; /* Adjusted for better scaling */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  /* margin-left: 1rem; */
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2vw; /* Scales better with rem */
+  font-weight: 600;
+  line-height: 1.2;
+}
+small {
+  font-size: 1vw;
+}
+h4 {
+  font-size: 1vw;
+}
+p {
+  font-size: 1vw;
+}
+
+.subtitle1 {
+  font-size: 1rem; /* Adjusted for better readability */
+  color: #888;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-card {
+    width: 25vw; /* Wider for smaller screens */
+    padding: 1.5rem;
+    max-height: auto; /* Adapts height to content */
+  }
+
+  h1 {
+    font-size: 3vw; /* Scales better with rem */
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  small {
+    font-size: 2vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+
+  .subtitle1 {
+    font-size: 1rem; /* Adjusted for better readability */
+    color: #888;
+  }
+}

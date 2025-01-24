@@ -1,0 +1,89 @@
+.navigation {
+  width: 250px;
+  background-color: #fafafa;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 2rem 0 2rem 1rem;
+}
+
+.ul-1 {
+  list-style: none;
+  padding: 0;
+}
+.ul-2 {
+  list-style: none;
+  padding: 0;
+  width: 9vw;
+}
+
+li {
+  margin: 10px 0;
+  padding: 0.8rem;
+  font-size: 1.1vw;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  background: #f1f1f1;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.navHeading {
+  font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    transform: translateX(-100%);
+    width: 40%;
+    height: 100%;
+    max-width: 300px;
+  }
+
+  .navigation.menu-open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navHeading {
+    font-size: 2.5vw;
+  }
+
+  .ul-1 {
+    display: inline;
+  }
+  .ul-2 {
+    display: inline;
+  }
+  li {
+    font-size: 2.5vw;
+  }
+
+  .logo {
+    font-size: 5vw;
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+}
